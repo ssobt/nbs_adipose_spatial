@@ -1,0 +1,698 @@
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceA1.ipynb to notebook
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 94, in preprocess
+    with self.setup_kernel():
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 595, in setup_kernel
+    self.start_new_kernel(**kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 543, in async_start_new_kernel
+    await ensure_async(self.km.start_kernel(extra_arguments=self.extra_arguments, **kwargs))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 30, in wrapped
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 27, in wrapped
+    return loop.run_until_complete(future)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 90, in wrapper
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 82, in wrapper
+    out = await method(self, *args, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 391, in _async_start_kernel
+    kernel_cmd, kw = await ensure_async(self.pre_start_kernel(**kw))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 30, in wrapped
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 27, in wrapped
+    return loop.run_until_complete(future)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 353, in _async_pre_start_kernel
+    self.kernel_spec,
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 178, in kernel_spec
+    self._kernel_spec = self.kernel_spec_manager.get_kernel_spec(self.kernel_name)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/kernelspec.py", line 294, in get_kernel_spec
+    raise NoSuchKernel(kernel_name)
+jupyter_client.kernelspec.NoSuchKernel: No such kernel named conda-env-farnaz_spatial-r
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceA1.ipynb to notebook
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 94, in preprocess
+    with self.setup_kernel():
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 595, in setup_kernel
+    self.start_new_kernel(**kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 543, in async_start_new_kernel
+    await ensure_async(self.km.start_kernel(extra_arguments=self.extra_arguments, **kwargs))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 30, in wrapped
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 27, in wrapped
+    return loop.run_until_complete(future)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 90, in wrapper
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 82, in wrapper
+    out = await method(self, *args, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 391, in _async_start_kernel
+    kernel_cmd, kw = await ensure_async(self.pre_start_kernel(**kw))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 30, in wrapped
+    raise e
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/utils.py", line 27, in wrapped
+    return loop.run_until_complete(future)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 353, in _async_pre_start_kernel
+    self.kernel_spec,
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/manager.py", line 178, in kernel_spec
+    self._kernel_spec = self.kernel_spec_manager.get_kernel_spec(self.kernel_name)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/kernelspec.py", line 294, in get_kernel_spec
+    raise NoSuchKernel(kernel_name)
+jupyter_client.kernelspec.NoSuchKernel: No such kernel named conda-env-farnaz_spatial-r
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceA1.ipynb to notebook
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceB1.ipynb to notebook
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceC1.ipynb to notebook
+[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceD1.ipynb to notebook
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceA1.ipynb to notebook
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceB1.ipynb to notebook
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceC1.ipynb to notebook
+[NbConvertApp] Converting notebook bayesprism_mBAT_ref_sliceD1.ipynb to notebook
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 776, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 184, in ensure_async
+    result = await obj
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_client/channels.py", line 224, in get_msg
+    ready = await self.socket.poll(timeout)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1002, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 285, in __await__
+    yield self  # This tells Task to wait for completion.
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+    future.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 196, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/traitlets/config/application.py", line 1041, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 592, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 483, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 198, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 217, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 153, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 349, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/futures.py", line 201, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/asyncio/tasks.py", line 234, in __step
+    result = coro.throw(exc)
+  File "/home/ssobti/miniconda3/envs/farnaz_spatial/lib/python3.10/site-packages/nbclient/client.py", line 1006, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+./generic_script3.sh: line 5: 570028 Killed                  Rscript --verbose /home/ssobti/projects/farnaz_spatial/notebooks/bayesprism_mBAT_ref_sliceB1.R > outputFile3.Rout 2>&1
+./generic_script2.sh: line 5: 569722 Killed                  Rscript --verbose /home/ssobti/projects/farnaz_spatial/notebooks/bayesprism_mBAT_ref_sliceA1.R > outputFile2.Rout 2>&1
+./generic_script3.sh: line 5: 596232 Killed                  Rscript --verbose /home/ssobti/projects/farnaz_spatial/notebooks/bayesprism_mBAT_ref_sliceB1.R > outputFile3.Rout 2>&1
+[NbConvertApp] Converting notebook Cell2location_seurat_ref_to_mtx.ipynb to notebook
+[NbConvertApp] Writing 163124 bytes to Cell2location_seurat_ref_to_mtx.nbconvert.ipynb
+[NbConvertApp] Converting notebook Cell2location_seurat_ref_to_mtx.ipynb to notebook
+[NbConvertApp] Writing 212104 bytes to Cell2location_seurat_ref_to_mtx.nbconvert.ipynb
+[NbConvertApp] Converting notebook Cell2location_seurat_ref_to_mtx.ipynb to notebook
+[NbConvertApp] Writing 212251 bytes to Cell2location_seurat_ref_to_mtx.nbconvert.ipynb
+[NbConvertApp] Converting notebook Cell2location_seurat_ref_to_mtx.ipynb to notebook
+[NbConvertApp] Writing 204983 bytes to Cell2location_seurat_ref_to_mtx.nbconvert.ipynb
+[NbConvertApp] WARNING | Config option `extra_template_paths` not recognized by `NotebookExporter`.
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/jupyter_core/application.py", line 277, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 418, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 587, in convert_notebooks
+    self.exporter = cls(config=self.config)
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 122, in __init__
+    self._init_preprocessors()
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 289, in _init_preprocessors
+    self.register_preprocessor(preprocessor, enabled=True)
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 249, in register_preprocessor
+    preprocessor_cls = import_item(preprocessor)
+  File "/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/traitlets/utils/importstring.py", line 30, in import_item
+    module = __import__(package, fromlist=[obj])
+ModuleNotFoundError: No module named 'jupyter_contrib_nbextensions'
+[NbConvertApp] Converting notebook cell2location_multislide_optimized.ipynb to notebook
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1.ipynb to notebook
+[NbConvertApp] Writing 1006698 bytes to cell2location_multislide_optimized_pt1.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1.ipynb to notebook
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1.ipynb to notebook
+[NbConvertApp] Writing 274610 bytes to cell2location_multislide_optimized_pt1.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1.ipynb to notebook
+[NbConvertApp] Writing 210098 bytes to cell2location_multislide_optimized_pt1.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.ipynb to notebook
+Process 3571225 dead!
+Process 3571225 detected
+[NbConvertApp] Writing 218794 bytes to cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.ipynb to notebook
+[NbConvertApp] Writing 6223361 bytes to cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.ipynb to notebook
+[NbConvertApp] Writing 6631243 bytes to cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha20.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha200.ipynb to notebook
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1a_predicted_celltype_ref_normalization.ipynb to notebook
+[NbConvertApp] Writing 6636052 bytes to cell2location_multislide_optimized_pt1b_deconvolution_N2_alpha200.nbconvert.ipynb
+[NbConvertApp] Writing 210418 bytes to cell2location_multislide_optimized_pt1a_predicted_celltype_ref_normalization.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_predicted_celltype_deconvolution_N2_alpha20.ipynb to notebook
+Process 1875472 dead!
+Process 1875472 detected
+[NbConvertApp] Writing 6574111 bytes to cell2location_multislide_optimized_pt1b_predicted_celltype_deconvolution_N2_alpha20.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1b_predicted_celltype_deconvolution_N2_alpha200.ipynb to notebook
+[NbConvertApp] Writing 6587653 bytes to cell2location_multislide_optimized_pt1b_predicted_celltype_deconvolution_N2_alpha200.nbconvert.ipynb
+[NbConvertApp] Converting notebook combining_refs.ipynb to notebook
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+[NbConvertApp] Writing 2203534 bytes to combining_refs.nbconvert.ipynb

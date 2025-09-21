@@ -1,0 +1,177 @@
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1a_multi_ref_normalization.ipynb to notebook
+/home/ssobti/miniconda3/envs/cell2loc_env/lib/python3.10/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1a_multi_ref_normalization.ipynb to notebook
+/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] Writing 2639086 bytes to cell2location_multislide_optimized_pt1a_multi_ref_normalization.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1a_multi_ref_normalization_try2.ipynb to notebook
+/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] ERROR | Kernel died while waiting for execute reply.
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/client.py", line 1000, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/jupyter_core/application.py", line 269, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 414, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 589, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 556, in convert_single_notebook
+    notebook_filename, resources, input_buffer=input_buffer
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 482, in export_single_notebook
+    notebook_filename, resources=resources
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 221, in from_file
+    nbformat.read(file_stream, as_version=4), resources=resources, **kw
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 352, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/util.py", line 85, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/util.py", line 60, in just_run
+    return loop.run_until_complete(coro)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/client.py", line 1004, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt1a_multi_ref_normalization.ipynb to notebook
+/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] Writing 2199745 bytes to cell2location_multislide_optimized_pt1a_multi_ref_normalization.nbconvert.ipynb
+[NbConvertApp] Converting notebook cell2location_multislide_optimized_pt2_multi_ref_normalization.ipynb to notebook
+Error: limit must be in the range of 1 to 5600
+CPUlimit version 2.4
+Usage: cpulimit TARGET [OPTIONS...] [-- PROGRAM]
+   TARGET must be exactly one of these:
+      -p, --pid=N        pid of the process
+      -e, --exe=FILE     name of the executable program file
+                         The -e option only works when
+                         cpulimit is run with admin rights.
+      -P, --path=PATH    absolute path name of the
+                         executable program file
+   OPTIONS
+      -b  --background   run in background
+      -f  --foreground   launch target process in foreground and wait for it to exit
+      -c  --cpu=N        override the detection of CPUs on the machine.
+      -l, --limit=N      percentage of cpu allowed from 1 up.
+                         Usually 1 - 5600, but can be higher
+                         on multi-core CPUs (mandatory)
+      -m, --monitor-forks  Watch children/forks of the target process
+      -q, --quiet        run in quiet mode (only print errors).
+      -k, --kill         kill processes going over their limit
+                         instead of just throttling them.
+      -r, --restore      Restore processes after they have
+                         been killed. Works with the -k flag.
+      -s, --signal=SIG   Send this signal to the watched process when cpulimit exits.
+                         Signal should be specificed as a number or 
+                         SIGTERM, SIGCONT, SIGSTOP, etc. SIGCONT is the default.
+      -v, --verbose      show control statistics
+      -z, --lazy         exit if there is no suitable target process,
+                         or if it dies
+          --             This is the final CPUlimit option. All following
+                         options are for another program we will launch.
+      -h, --help         display this help and exit
+Error: limit must be in the range of 1 to 5600
+CPUlimit version 2.4
+Usage: cpulimit TARGET [OPTIONS...] [-- PROGRAM]
+   TARGET must be exactly one of these:
+      -p, --pid=N        pid of the process
+      -e, --exe=FILE     name of the executable program file
+                         The -e option only works when
+                         cpulimit is run with admin rights.
+      -P, --path=PATH    absolute path name of the
+                         executable program file
+   OPTIONS
+      -b  --background   run in background
+      -f  --foreground   launch target process in foreground and wait for it to exit
+      -c  --cpu=N        override the detection of CPUs on the machine.
+      -l, --limit=N      percentage of cpu allowed from 1 up.
+                         Usually 1 - 5600, but can be higher
+                         on multi-core CPUs (mandatory)
+      -m, --monitor-forks  Watch children/forks of the target process
+      -q, --quiet        run in quiet mode (only print errors).
+      -k, --kill         kill processes going over their limit
+                         instead of just throttling them.
+      -r, --restore      Restore processes after they have
+                         been killed. Works with the -k flag.
+      -s, --signal=SIG   Send this signal to the watched process when cpulimit exits.
+                         Signal should be specificed as a number or 
+                         SIGTERM, SIGCONT, SIGSTOP, etc. SIGCONT is the default.
+      -v, --verbose      show control statistics
+      -z, --lazy         exit if there is no suitable target process,
+                         or if it dies
+          --             This is the final CPUlimit option. All following
+                         options are for another program we will launch.
+      -h, --help         display this help and exit
+[NbConvertApp] ERROR | Kernel died while waiting for execute reply.
+Process 3334206 dead!
+Process 3334206 detected
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/client.py", line 1000, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/jupyter_core/application.py", line 269, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 414, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 589, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 556, in convert_single_notebook
+    notebook_filename, resources, input_buffer=input_buffer
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/nbconvertapp.py", line 482, in export_single_notebook
+    notebook_filename, resources=resources
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 221, in from_file
+    nbformat.read(file_stream, as_version=4), resources=resources, **kw
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/exporters/exporter.py", line 352, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/util.py", line 85, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/util.py", line 60, in just_run
+    return loop.run_until_complete(coro)
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/old_cell2loc_env/lib/python3.7/site-packages/nbclient/client.py", line 1004, in async_execute_cell
+    raise DeadKernelError("Kernel died")
+nbclient.exceptions.DeadKernelError: Kernel died

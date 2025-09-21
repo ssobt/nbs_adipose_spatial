@@ -1,0 +1,276 @@
+running
+  '/home/ssobti/miniconda3/envs/farnaz_spatial/lib/R/bin/R --no-echo --no-restore --file=/home/ssobti/projects/farnaz_spatial/notebooks/bayesprism_mBAT_ref_sliceA1.R'
+
+Loading required package: snowfall
+Loading required package: snow
+Loading required package: NMF
+Loading required package: pkgmaker
+Loading required package: registry
+Loading required package: rngtools
+Loading required package: cluster
+NMF - BioConductor layer [OK] | Shared memory capabilities [NO: bigmemory] | Cores 55/56
+  To enable shared memory capabilities, try: install.extras('
+NMF
+')
+Warning messages:
+1: replacing previous import ‘gplots::lowess’ by ‘stats::lowess’ when loading ‘BayesPrism’ 
+2: replacing previous import ‘BiocParallel::register’ by ‘NMF::register’ when loading ‘BayesPrism’ 
+Attaching SeuratObject
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning: Keys should be one or more alphanumeric characters followed by an underscore, setting key from a1_slice_ to a1slice_
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 13.9 GiB
+Gene symbols detected. Recommend to use EMSEMBLE IDs for more unique mapping.
+Gene symbols detected. Recommend to use EMSEMBLE IDs for more unique mapping.
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:NMF’:
+
+    nrun
+
+The following object is masked from ‘package:pkgmaker’:
+
+    new2
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+'select()' returned 1:1 mapping between keys and columns
+[1] "protein-coding" NA               "ncRNA"          "unknown"       
+[5] "other"          "pseudo"        
+   genes      gene_type
+1   Xkr4 protein-coding
+2 Gm1992 protein-coding
+3    Rp1 protein-coding
+4  Sox17 protein-coding
+5 Lypla1 protein-coding
+7  Tcea1 protein-coding
+[1] "protein_coding_genes" "ncRNA_genes"          "pseudo_genes"        
+Warning messages:
+1: Removed 694 rows containing missing values (`geom_point()`). 
+2: Removed 1559 rows containing missing values (`geom_point()`). 
+3: Removed 27 rows containing missing values (`geom_point()`). 
+[1] 94113 18532
+[1] 94113 14942
+number of markers selected for each cell type: 
+CD14_cells_cluster30 :  208 
+B_cells :  106 
+Th1_cells :  45 
+Macrophages_cluster28 :  86 
+VSM :  835 
+NK_cells :  115 
+ECs :  420 
+Pericytes :  414 
+CD8_T_cells :  74 
+CD4_T_cells :  32 
+Tregs :  234 
+Neutrophils :  232 
+Macrophages_cluster33 :  353 
+Lymphatic_EC :  489 
+Pdgfra_APC :  512 
+Non-myelinating_Schwann_cells :  386 
+Myelinating_Schwann_cells :  315 
+ILC2s :  90 
+Platelets :  0 
+Eosinophils :  196 
+Adipocytes :  1080 
+Megakaryocytes :  320 
+[1] 94113  5845
+number of cells in each cell state 
+cell.state.labels
+               Megakaryocytes                     Platelets 
+                          104                           282 
+                 Lymphatic_EC     Myelinating_Schwann_cells 
+                          406                           539 
+                        ILC2s         Macrophages_cluster33 
+                          643                           734 
+                  Eosinophils Non-myelinating_Schwann_cells 
+                          738                           869 
+         CD14_cells_cluster30         Macrophages_cluster28 
+                          934                          1016 
+                    Pericytes                   Neutrophils 
+                         1046                          1089 
+                   Adipocytes                         Tregs 
+                         1262                          1417 
+                    Th1_cells                    Pdgfra_APC 
+                         1800                          2622 
+                          ECs                      NK_cells 
+                         5134                          5274 
+                  CD4_T_cells                   CD8_T_cells 
+                         8104                         10485 
+                          VSM                       B_cells 
+                        14345                         35270 
+No tumor reference is speficied. Reference cell types are treated equally. 
+Number of outlier genes filtered from mixture = 6 
+Aligning reference and mixture... 
+Nornalizing reference... 
+Run Gibbs sampling... 
+Current time:  2023-01-28 11:38:10 
+Estimated time to complete:  13hrs 7mins 
+Estimated finishing time:  2023-01-29 00:44:39 
+Start run... 
+R Version:  R version 4.2.2 (2022-10-31) 
+
+snowfall 1.84-6.2 initialized (using snow 0.4-4): parallel execution on 20 CPUs.
+
+
+Stopping cluster
+
+Update the reference matrix ... 
+snowfall 1.84-6.2 initialized (using snow 0.4-4): parallel execution on 20 CPUs.
+
+
+Stopping cluster
+
+Run Gibbs sampling using updated reference ... 
+Current time:  2023-01-28 15:35:47 
+Estimated time to complete:  7hrs 49mins 
+Estimated finishing time:  2023-01-28 23:24:19 
+Start run... 
+snowfall 1.84-6.2 initialized (using snow 0.4-4): parallel execution on 20 CPUs.
+
+
+Stopping cluster
+
+Warning messages:
+1: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: --file
+2: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: --file
+3: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: --file
+                   CD14_cells_cluster30     B_cells   Th1_cells
+AAACAAGTATCTCCCA-1         0.0007442879 0.002577202 0.001714483
+AAACACCAATAACTGC-1         0.0003086935 0.001334322 0.002549011
+AAACAGCTTTCAGAAG-1         0.0043491256 0.004232894 0.003874804
+AAACAGGGTCTATATT-1         0.0012464148 0.002953940 0.004710471
+AAACAGTGTTCCTGGG-1         0.0009570902 0.003164108 0.001368380
+AAACATGGTGAGAGGA-1         0.0063863452 0.001916801 0.003903791
+                   Macrophages_cluster28          VSM    NK_cells        ECs
+AAACAAGTATCTCCCA-1           0.016519684 0.0008562578 0.003952165 0.09015418
+AAACACCAATAACTGC-1           0.002652178 0.0003783694 0.001802599 0.08599192
+AAACAGCTTTCAGAAG-1           0.001753273 0.0045635363 0.002713894 0.13389115
+AAACAGGGTCTATATT-1           0.001304666 0.0043515831 0.003983681 0.13503065
+AAACAGTGTTCCTGGG-1           0.003521675 0.0015834982 0.000613008 0.10188281
+AAACATGGTGAGAGGA-1           0.004737039 0.0166449642 0.002798309 0.08059842
+                    Pericytes CD8_T_cells CD4_T_cells       Tregs  Neutrophils
+AAACAAGTATCTCCCA-1 0.05332851 0.002458623 0.001343991 0.001762130 0.0008593834
+AAACACCAATAACTGC-1 0.05452647 0.002896320 0.002956896 0.001676129 0.0007865299
+AAACAGCTTTCAGAAG-1 0.06871665 0.004884586 0.006339686 0.005260759 0.0016955718
+AAACAGGGTCTATATT-1 0.06835354 0.009249466 0.011729808 0.002721229 0.0019264187
+AAACAGTGTTCCTGGG-1 0.03512167 0.001472203 0.001647001 0.001229694 0.0010671112
+AAACATGGTGAGAGGA-1 0.03415404 0.003696279 0.004287777 0.004696267 0.0012311875
+                   Macrophages_cluster33 Lymphatic_EC Pdgfra_APC
+AAACAAGTATCTCCCA-1           0.001457279   0.01291618 0.18297992
+AAACACCAATAACTGC-1           0.001618308   0.01160158 0.03379263
+AAACAGCTTTCAGAAG-1           0.003176191   0.02203981 0.03120036
+AAACAGGGTCTATATT-1           0.001491165   0.01162578 0.04205158
+AAACAGTGTTCCTGGG-1           0.004729133   0.03233758 0.03557946
+AAACATGGTGAGAGGA-1           0.002498245   0.03583271 0.05767373
+                   Non-myelinating_Schwann_cells Myelinating_Schwann_cells
+AAACAAGTATCTCCCA-1                   0.010663649              0.0018667950
+AAACACCAATAACTGC-1                   0.018524941              0.0007327327
+AAACAGCTTTCAGAAG-1                   0.011917915              0.0056374706
+AAACAGGGTCTATATT-1                   0.021001996              0.0020159141
+AAACAGTGTTCCTGGG-1                   0.059125433              0.0066201334
+AAACATGGTGAGAGGA-1                   0.009766355              0.0036601907
+                         ILC2s   Platelets  Eosinophils Adipocytes
+AAACAAGTATCTCCCA-1 0.002294169 0.001952417 0.0015009249  0.6052637
+AAACACCAATAACTGC-1 0.001923233 0.003071056 0.0008412706  0.7686341
+AAACAGCTTTCAGAAG-1 0.005749998 0.003008903 0.0023496576  0.6706684
+AAACAGGGTCTATATT-1 0.006903957 0.006477383 0.0055837242  0.6489480
+AAACAGTGTTCCTGGG-1 0.001201099 0.002163956 0.0009238254  0.7023743
+AAACATGGTGAGAGGA-1 0.003765756 0.001995593 0.0028531458  0.7157783
+                   Megakaryocytes
+AAACAAGTATCTCCCA-1    0.002834127
+AAACACCAATAACTGC-1    0.001400736
+AAACAGCTTTCAGAAG-1    0.001975398
+AAACAGGGTCTATATT-1    0.006338694
+AAACAGTGTTCCTGGG-1    0.001316848
+AAACATGGTGAGAGGA-1    0.001124753
+                   CD14_cells_cluster30   B_cells Th1_cells
+AAACAAGTATCTCCCA-1            0.9397747 0.8767135 0.9727540
+AAACACCAATAACTGC-1            1.0134965 0.9860484 0.8787600
+AAACAGCTTTCAGAAG-1            0.6694726 0.7522332 0.7893354
+AAACAGGGTCTATATT-1            0.8251167 0.7381990 0.7543360
+AAACAGTGTTCCTGGG-1            0.8371407 0.7093818 0.8881832
+AAACATGGTGAGAGGA-1            0.4620275 0.9754013 0.8089805
+                   Macrophages_cluster28       VSM  NK_cells        ECs
+AAACAAGTATCTCCCA-1             0.1986935 0.9179053 0.8345749 0.10375678
+AAACACCAATAACTGC-1             0.4519581 1.0370889 0.8251475 0.09099980
+AAACAGCTTTCAGAAG-1             0.9096627 0.6457412 1.0139712 0.12072340
+AAACAGGGTCTATATT-1             1.0326310 0.6457812 0.8570929 0.10577181
+AAACAGTGTTCCTGGG-1             0.4286086 0.5701486 1.0537058 0.06872167
+AAACATGGTGAGAGGA-1             0.4551026 0.2170330 0.9082900 0.14616936
+                   Pericytes CD8_T_cells CD4_T_cells     Tregs Neutrophils
+AAACAAGTATCTCCCA-1 0.1580441   0.7984562   1.1082659 0.9164479   0.9788337
+AAACACCAATAACTGC-1 0.1437572   0.7362345   0.6397568 0.8639347   0.7368298
+AAACAGCTTTCAGAAG-1 0.2060134   0.9765580   0.9047888 1.0652867   0.9652311
+AAACAGGGTCTATATT-1 0.1565778   0.7314771   0.7869192 0.8819427   0.9209709
+AAACAGTGTTCCTGGG-1 0.1841906   0.7447360   0.7445041 0.8716804   0.7672693
+AAACATGGTGAGAGGA-1 0.3026957   0.9213650   0.8406333 0.7836968   1.0813286
+                   Macrophages_cluster33 Lymphatic_EC Pdgfra_APC
+AAACAAGTATCTCCCA-1             1.1036096    0.3420709 0.04946427
+AAACACCAATAACTGC-1             0.9088726    0.4613277 0.12576487
+AAACAGCTTTCAGAAG-1             0.9342890    0.4664379 0.23379829
+AAACAGGGTCTATATT-1             0.9489184    0.5498923 0.14313866
+AAACAGTGTTCCTGGG-1             0.5287942    0.2218235 0.12183587
+AAACATGGTGAGAGGA-1             0.9330067    0.2710643 0.15501480
+                   Non-myelinating_Schwann_cells Myelinating_Schwann_cells
+AAACAAGTATCTCCCA-1                     0.6373696                 0.7067363
+AAACACCAATAACTGC-1                     0.2324943                 1.0014951
+AAACAGCTTTCAGAAG-1                     0.6952898                 0.5867035
+AAACAGGGTCTATATT-1                     0.3747003                 0.8060315
+AAACAGTGTTCCTGGG-1                     0.1207380                 0.2570370
+AAACATGGTGAGAGGA-1                     0.9233512                 0.6140945
+                       ILC2s Platelets Eosinophils  Adipocytes Megakaryocytes
+AAACAAGTATCTCCCA-1 0.9354442 0.8198232   0.7864004 0.013170379      0.5797470
+AAACACCAATAACTGC-1 0.8236586 0.6648782   0.8424700 0.008338183      0.6647350
+AAACAGCTTTCAGAAG-1 0.7543659 1.0373844   0.8814385 0.021490299      0.9689380
+AAACAGGGTCTATATT-1 0.6900968 0.8867683   0.7304697 0.017049469      0.4639406
+AAACAGTGTTCCTGGG-1 0.8656370 0.7603580   0.8300690 0.010012496      0.8615973
+AAACATGGTGAGAGGA-1 0.7951500 0.9408612   0.7928148 0.017667330      0.9452951
